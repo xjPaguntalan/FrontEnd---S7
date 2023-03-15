@@ -1,0 +1,129 @@
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Google Fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Navigation bar */
+/* 1rem = 16px (default font size) */
+nav {
+    /* Creates space from between the ul tag and the nav element */
+    padding: 0.8rem;
+    /* Creates space between the nav and the intro section */
+    margin-bottom: 2rem;
+    border-bottom: 1px solid gray;
+    list-style-type: none;
+}
+
+/* Margin vs padding */
+/* margin is best used to create between elements */
+/* padding is best used when creating space between an element border and it's content */
+
+nav .nav, nav .nav-logo {
+    /* Creates space between the ul and the nav elements */
+    margin: 0.5rem;
+    /* Changes elements to inline elements */
+    display: inline;
+}
+
+#intro {
+    /* Creates space between the contents of the intro section and it's border */
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    /* padding: 2rem 10% 3rem */
+    text-align: center;
+}
+
+.header{
+    /* Best used when horizontally aligning text instead of using margin and padding */
+    text-align: center;
+}
+
+#intro h2, #intro p {
+    /* Creates space between the contents of the intro section */
+    margin-bottom: 1rem;
+}
+
+#intro button {
+    color: white;
+    /* Changes the thickness of text */
+    font-weight: bold;
+    background-color: #c2195b;
+    border-radius: 25px;
+    font-size: 1rem;
+    /* Creates space between the button text and the border */
+    padding: 1rem;
+}
+
+/* Succeed info section */
+#succeed-info {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+#succeed-info h2 {
+    /* Creates space between the header and the card section */
+    margin-bottom: 1rem;
+}
+
+#succeed-info h3 {
+    text-align: center;
+    /* Creates space between the h3 tag and the paragraph tag */
+    margin-bottom: 1rem;
+}
+
+#succeed-info .card {
+    /* Allows the cards to appear beside each other */
+    display: inline-block;
+    /* Aligns elements with the tallest element in line */
+    /* Used with the "inline-block" value */
+    vertical-align: top;
+    /* Allows for cards to have equal height that adjust with the content */
+    min-width: 175px;
+    /* Measurement is based on equality dividing the parent container's width */
+    /* Only use the 30% and not 33.3% because of margin to avoid overflow and horizontal scrolling */
+    width: 30%;
+    /* Creates horizontal spacing between cards */
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#pre-footer .pref {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    color: white;
+    padding: 1rem 1.5rem 1rem;
+}
+
+#pre-footer .preff {
+    display: inline-block;
+    width: 20%;
+    color: white;
+    vertical-align: bottom;
+    padding-bottom: 1rem;
+}
+
+#pre-footer {
+    background-color: #151B54;
+}
+
+#footer {
+    padding: 1rem 1rem 1rem;
+}
+span {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
